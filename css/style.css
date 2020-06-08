@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "ALSStory";
+}
+
+@font-face {
+    /* // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)  */
+    font-family: "ALSStory";
+    /* // адрес шрифта и тип  */
+    /* src: url("../fonts/RalewayRegular.ttf") format("truetype"); */
+    src: url("../fonts/Story\ Brush.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+.main-content {
+    min-height: 100vh;
+    background-color: #f4f4f6;
+}
+
+.content-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 26px 0 #e1e1e1;
+    background-color: #ffffff;
+}
+
+.item-title {
+    padding: 30px 45px;
+}
+
+.item-title .genotik {
+    padding-right: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+    color: #6d7278;
+}
+
+.item-title .date_time {
+    padding-right: 15px;
+    color: #6d7278;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.item-title .permission {
+    padding-left: 8px;
+}
+
+.item-title h2 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.item-title img {
+    position: relative;
+    top: 3px;
+    left: 0;
+}
+
+.item-title p {
+    max-width: 485px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.present-content img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.info-block {
+    position: relative;
+    background-color: #142536;
+    border-bottom: solid 1px #405265;
+}
+
+.info-block .info-title {
+    position: relative;
+    padding: 30px 45px;
+    cursor: pointer;
+}
+
+.box-closed:hover {
+    background-color: #22374b;
+}
+
+.info-block .info-block-title {
+    display: block;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: normal;
+    padding-right: 15px;
+}
+
+.info-block .arrow {
+    position: absolute;
+    top: 50%;
+    right: 45px;
+    width: 14px;
+    height: 6px;
+}
+
+.info-block .info-block-content {
+    border-top: solid 1px #405265;
+    padding: 29px 0px 0px 0px;
+    margin: 0 45px;
+}
+
+.info-block-content .info-description {
+    width: 60%;
+    display: inline-block;
+}
+
+.info-block-content .img-circle {
+    width: 39%;
+    display: inline-block;
+}
+
+.info-description {
+    font-size: 16px;
+    font-weight: normal;
+    color: #ffffff;
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+.info-description a {
+    color: #5a88c1;
+    display: inline;
+    border-bottom: 2px dotted #5a88c1;
+    padding-bottom: 2px;
+    text-decoration: none;
+    border-radius: 2px
+}
+
+.img-circle {
+    text-align: center;
+}
+
+.img-circle img {
+    border-radius: 50%;
+}
+
+.form-group input {
+    width: 100%;
+    border-bottom: solid 1px #5c738b;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #ffffff;
+    background: none;
+    padding-bottom: 3px;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+.form-group input::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+.form-group input:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+.form-group input::placeholder {
+    color: #ffffff;
+}
+
+.form-group input:focus {
+    outline: none;
+}
+
+.input-row {
+    position: relative;
+    max-width: 281px;
+}
+
+.input-row:hover .clear-input {
+    display: block;
+    cursor: pointer;
+}
+
+.input-row:hover input {
+    border-bottom: solid 1px #ffffff;
+}
+
+.clear-input {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: none;
+}
+
+.button-row button {
+    width: 214px;
+    height: 50px;
+    border-radius: 29.5px;
+    border: solid 1px #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    background: none;
+    color: #ffffff;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.mobile-img {
+    margin: 0 auto;
+    display: none;
+    border-radius: 50%;
+}
+
+.button-row button:focus {
+    outline: none;
+}
+
+@media (max-width: 1500px) {
+    .main-content2 {
+        padding: 114px 100px 40px 250px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .info-description span {
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+    .img-circle {
+        display: none !important;
+    }
+
+    .main-content2 {
+        padding: 114px 60px 40px 190px;
+    }
+
+    .info-block-content .info-description {
+
+        width: 100%;
+    }
+
+    .info-block-content .img-circle {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 29px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-content2 {
+        padding: 114px 30px 40px 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content2 {
+        padding: 114px 30px 40px 50px;
+    }
+
+    .input-row {
+        max-width: 100%;
+    }
+
+    .button-row button {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .main-content2 {
+        padding: 60px 0px 40px 0px;
+    }
+
+    .permission {
+        display: none;
+    }
+
+    .content-item {
+        border-radius: 0px;
+    }
+
+    .item-title {
+        padding: 30px 15px 15px 15px;
+    }
+
+    .info-block .info-block-content {
+        margin: 0 15px;
+        padding-top: 15px;
+    }
+
+    .info-block .info-title {
+        padding: 15px;
+    }
+
+    .info-block .arrow {
+        right: 15px;
+    }
+
+
+
+}
